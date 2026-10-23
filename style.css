@@ -1,0 +1,1529 @@
+
+/* =====================================================
+   1. PENGATURAN DASAR WEBSITE
+   Bagian ini mengatur warna, font, dan ukuran umum.
+   ===================================================== */
+
+/* Menghilangkan margin bawaan dan menyamakan perhitungan ukuran */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel warna agar mudah diubah untuk seluruh website */
+:root {
+    --primary: #0f766e;
+    --primary-dark: #115e59;
+    --primary-light: #ccfbf1;
+
+    --secondary: #e0f2fe;
+    --accent: #f0fdfa;
+
+    --text: #1f2937;
+    --text-light: #64748b;
+
+    --white: #ffffff;
+    --background: #f8fafc;
+    --border: #e2e8f0;
+
+    --success: #15803d;
+    --danger: #dc2626;
+
+    --shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
+    --radius: 16px;
+}
+
+/* Mengatur perilaku gulir ketika menu navigasi diklik */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+/* Tampilan dasar seluruh halaman */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.7;
+    overflow-wrap: break-word;
+}
+
+/* Mengatur tampilan gambar agar tidak melebihi wadah */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Menghilangkan garis bawah bawaan pada tautan */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Menyamakan font tombol dan elemen formulir */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+/* Membuat tombol memiliki kursor tangan */
+button {
+    cursor: pointer;
+}
+
+/* Memberikan tampilan fokus agar navigasi keyboard mudah digunakan */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+    outline: 3px solid #38bdf8;
+    outline-offset: 3px;
+}
+
+/* Wadah utama agar konten berada di tengah halaman */
+.container {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+/* Jarak vertikal standar antarbagian */
+.section-padding {
+    padding: 88px 0;
+}
+
+
+/* =====================================================
+   2. HEADER DAN NAVIGASI
+   Mengatur logo, menu, dan tombol pemesanan.
+   ===================================================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid var(--border);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Menata isi header dalam satu baris */
+.navbar {
+    min-height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/* Tampilan logo LaundryGo */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+
+    white-space: nowrap;
+}
+
+/* Ikon gelembung pada logo */
+.logo-icon {
+    font-size: 1.7rem;
+}
+
+/* Warna khusus tulisan Go */
+.logo-highlight {
+    color: var(--primary);
+}
+
+/* Susunan menu navigasi */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Tampilan tautan navigasi */
+.nav-menu a {
+    color: var(--text-light);
+    font-size: 0.92rem;
+    font-weight: 600;
+
+    transition: color 0.2s ease;
+}
+
+/* Warna ketika menu disentuh mouse */
+.nav-menu a:hover {
+    color: var(--primary);
+}
+
+/* Tombol menu HP disembunyikan pada layar besar */
+.menu-toggle {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    color: var(--primary);
+    font-size: 1.8rem;
+    padding: 5px;
+}
+
+
+/* =====================================================
+   3. TOMBOL UMUM
+   Digunakan untuk tombol pesan dan pilihan layanan.
+   ===================================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-height: 46px;
+    padding: 12px 22px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Tombol utama berwarna hijau kebiruan */
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* Efek hover pada tombol utama */
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(15, 118, 110, 0.2);
+}
+
+/* Tombol dengan latar transparan */
+.btn-outline {
+    color: var(--primary);
+    background: transparent;
+    border-color: var(--primary);
+}
+
+/* Efek hover tombol outline */
+.btn-outline:hover {
+    background: var(--primary-light);
+}
+
+/* Tombol yang memenuhi lebar wadah */
+.btn-full {
+    width: 100%;
+}
+
+/* Tampilan tombol yang sedang dinonaktifkan */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =====================================================
+   4. BERANDA / HERO
+   Bagian pertama yang dilihat pengunjung.
+   ===================================================== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 85px 0 100px;
+
+    background:
+        radial-gradient(
+            circle at 85% 15%,
+            #ccfbf1 0,
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #f0fdfa 0%,
+            #ffffff 55%,
+            #eff6ff 100%
+        );
+}
+
+/* Membagi hero menjadi dua kolom */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Label kecil di atas judul */
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+/* Label khusus pada bagian hero */
+.hero-content .eyebrow {
+    padding: 8px 14px;
+    border-radius: 30px;
+    background: var(--primary-light);
+
+    letter-spacing: 0;
+    font-size: 0.85rem;
+}
+
+/* Judul utama hero */
+.hero h1 {
+    margin-bottom: 22px;
+
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.12;
+    letter-spacing: -2px;
+}
+
+/* Warna sorotan judul */
+.text-highlight {
+    color: var(--primary);
+}
+
+/* Deskripsi pada beranda */
+.hero-description {
+    max-width: 560px;
+    margin-bottom: 28px;
+
+    color: var(--text-light);
+    font-size: 1.05rem;
+}
+
+/* Susunan tombol hero */
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+/* Daftar keunggulan singkat */
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    color: var(--text-light);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Sisi kanan hero */
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lingkaran dekoratif */
+.hero-circle {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: min(100%, 430px);
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ccfbf1, #dbeafe);
+}
+
+/* Area ilustrasi */
+.laundry-illustration {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 75%;
+    height: 75%;
+}
+
+/* Emoji keranjang */
+.basket {
+    position: absolute;
+    bottom: 8%;
+    left: 14%;
+
+    font-size: clamp(5rem, 10vw, 8rem);
+}
+
+/* Emoji pakaian */
+.shirt {
+    position: absolute;
+    top: 8%;
+    right: 9%;
+
+    font-size: clamp(4rem, 8vw, 6.5rem);
+    transform: rotate(12deg);
+}
+
+/* Bintang dekoratif */
+.sparkle {
+    position: absolute;
+    top: 3%;
+    left: 12%;
+
+    color: #0f766e;
+    font-size: 3rem;
+}
+
+/* Gelembung dekoratif */
+.bubble {
+    position: absolute;
+
+    display: block;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.bubble-one {
+    width: 22px;
+    height: 22px;
+    top: 28%;
+    left: 8%;
+}
+
+.bubble-two {
+    width: 14px;
+    height: 14px;
+    top: 55%;
+    right: 4%;
+}
+
+.bubble-three {
+    width: 28px;
+    height: 28px;
+    bottom: 14%;
+    right: 23%;
+}
+
+/* Kartu informasi yang mengambang di atas ilustrasi */
+.floating-card {
+    position: absolute;
+    bottom: 10%;
+    left: -6%;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 18px;
+
+    border-radius: 14px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+/* Ikon pada kartu mengambang */
+.floating-icon {
+    display: grid;
+    place-items: center;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 12px;
+    background: var(--primary-light);
+
+    font-size: 1.5rem;
+}
+
+/* Judul kartu mengambang */
+.floating-card strong {
+    display: block;
+    font-size: 0.9rem;
+}
+
+/* Deskripsi kartu mengambang */
+.floating-card p {
+    color: var(--text-light);
+    font-size: 0.75rem;
+}
+
+
+/* =====================================================
+   5. JUDUL BAGIAN DAN KEUNGGULAN
+   ===================================================== */
+
+/* Judul yang digunakan pada beberapa section */
+.section-heading {
+    max-width: 680px;
+    margin: 0 auto 48px;
+
+    text-align: center;
+}
+
+/* Judul utama setiap section */
+.section-heading h2 {
+    margin-bottom: 14px;
+
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.25;
+    letter-spacing: -1px;
+}
+
+/* Deskripsi di bawah judul section */
+.section-heading p {
+    color: var(--text-light);
+}
+
+/* Latar bagian keunggulan */
+.advantages {
+    background: var(--white);
+}
+
+/* Grid tiga kolom */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Kartu keunggulan */
+.advantage-card {
+    padding: 32px 25px;
+
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Efek hover pada kartu */
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+/* Ikon keunggulan */
+.feature-icon {
+    display: grid;
+    place-items: center;
+
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+    background: var(--primary-light);
+
+    font-size: 1.8rem;
+}
+
+/* Judul kartu keunggulan */
+.advantage-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+
+/* Isi kartu keunggulan */
+.advantage-card p {
+    color: var(--text-light);
+    font-size: 0.92rem;
+}
+
+
+/* =====================================================
+   6. KARTU LAYANAN LAUNDRY
+   ===================================================== */
+
+/* Latar bagian layanan */
+.services {
+    background: var(--background);
+}
+
+/* Grid kartu layanan */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* Tampilan kartu layanan */
+.service-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 30px;
+
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.03);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Efek saat kartu layanan disentuh mouse */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+/* Kartu layanan yang ingin ditonjolkan */
+.service-featured {
+    border: 2px solid var(--primary);
+}
+
+/* Label layanan populer */
+.popular-label {
+    position: absolute;
+    top: -13px;
+    right: 20px;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+    background: var(--primary);
+    color: var(--white);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+/* Ikon layanan */
+.service-icon {
+    display: grid;
+    place-items: center;
+
+    width: 65px;
+    height: 65px;
+
+    margin-bottom: 22px;
+
+    border-radius: 18px;
+    background: var(--accent);
+
+    font-size: 2rem;
+}
+
+/* Judul layanan */
+.service-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+}
+
+/* Deskripsi layanan */
+.service-card p {
+    margin-bottom: 20px;
+
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Bagian harga didorong ke bawah agar tombol sejajar */
+.service-price {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+/* Angka harga */
+.service-price strong {
+    color: var(--primary);
+    font-size: 1.7rem;
+}
+
+/* Satuan harga */
+.service-price span {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Tombol layanan memenuhi lebar kartu */
+.service-card .btn {
+    width: 100%;
+}
+
+/* Catatan kecil harga */
+.price-note {
+    margin-top: 28px;
+
+    color: var(--text-light);
+    font-size: 0.82rem;
+    text-align: center;
+}
+
+
+/* =====================================================
+   7. BAGIAN CARA KERJA
+   ===================================================== */
+
+/* Latar cara kerja */
+.how-it-works {
+    background: var(--white);
+}
+
+/* Grid langkah pemesanan */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* Kartu setiap langkah */
+.step-card {
+    position: relative;
+
+    padding: 28px 22px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--white);
+}
+
+/* Nomor langkah */
+.step-number {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+
+    color: #cbd5e1;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+/* Ikon langkah */
+.step-icon {
+    margin-bottom: 16px;
+    font-size: 2.2rem;
+}
+
+/* Judul langkah */
+.step-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+/* Deskripsi langkah */
+.step-card p {
+    color: var(--text-light);
+    font-size: 0.87rem;
+}
+
+
+/* =====================================================
+   8. FORMULIR PEMESANAN
+   ===================================================== */
+
+/* Latar section pemesanan */
+.booking {
+    background: linear-gradient(135deg, #f0fdfa, #eff6ff);
+}
+
+/* Layout informasi dan formulir */
+.booking-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: start;
+    gap: 60px;
+}
+
+/* Judul bagian informasi pemesanan */
+.booking-info h2 {
+    margin-bottom: 20px;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+/* Deskripsi bagian pemesanan */
+.booking-info > p {
+    margin-bottom: 25px;
+    color: var(--text-light);
+}
+
+/* Daftar manfaat pada bagian pemesanan */
+.booking-benefits {
+    display: grid;
+    gap: 12px;
+}
+
+/* Setiap baris manfaat */
+.booking-benefits > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Tanda centang manfaat */
+.booking-benefits span {
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+    width: 27px;
+    height: 27px;
+
+    border-radius: 50%;
+    background: var(--primary-light);
+    color: var(--primary);
+
+    font-weight: 800;
+}
+
+/* Teks manfaat */
+.booking-benefits p {
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+/* Catatan jadwal dan konfirmasi */
+.booking-note {
+    margin-top: 32px;
+    padding: 20px;
+
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+
+    background: var(--white);
+}
+
+/* Judul catatan */
+.booking-note strong {
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Isi catatan */
+.booking-note p {
+    color: var(--text-light);
+    font-size: 0.88rem;
+}
+
+/* Kartu putih formulir */
+.booking-form-card {
+    padding: 35px;
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--white);
+
+    box-shadow: var(--shadow);
+}
+
+/* Judul formulir */
+.booking-form-card h3 {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+/* Deskripsi formulir */
+.form-description {
+    margin-bottom: 25px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Jarak antar input formulir */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+/* Label setiap kolom */
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Tampilan input, select, dan textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    min-width: 0;
+
+    padding: 12px 14px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+
+    background: var(--white);
+    color: var(--text);
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Tampilan saat kolom sedang dipilih */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+
+/* Memungkinkan textarea diubah tinggi oleh pengguna */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Warna placeholder */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+/* Catatan kecil di bawah input */
+.form-group small {
+    color: var(--text-light);
+    font-size: 0.78rem;
+}
+
+/* Kotak estimasi biaya */
+.estimate-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    margin: 25px 0;
+    padding: 20px;
+
+    border: 1px solid #99f6e4;
+    border-radius: 12px;
+
+    background: var(--accent);
+}
+
+/* Judul estimasi */
+.estimate-box > span {
+    color: var(--text-light);
+    font-size: 0.88rem;
+}
+
+/* Angka total estimasi */
+.estimate-box strong {
+    color: var(--primary);
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+/* Rincian perhitungan estimasi */
+.estimate-box small {
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+/* Pesan berhasil atau gagal dari JavaScript */
+.form-message {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Kelas yang dapat dipakai JavaScript untuk pesan berhasil */
+.form-message.success {
+    color: var(--success);
+}
+
+/* Kelas yang dapat dipakai JavaScript untuk pesan gagal */
+.form-message.error {
+    color: var(--danger);
+}
+
+/* Catatan privasi */
+.privacy-note {
+    margin-top: 15px;
+
+    color: var(--text-light);
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+
+/* =====================================================
+   9. FAQ / PERTANYAAN UMUM
+   ===================================================== */
+
+/* Latar bagian FAQ */
+.faq {
+    background: var(--white);
+}
+
+/* Batas lebar daftar FAQ */
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: grid;
+    gap: 14px;
+}
+
+/* Kartu pertanyaan */
+.faq-item {
+    padding: 20px 22px;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--background);
+}
+
+/* Judul pertanyaan yang dapat diklik */
+.faq-item summary {
+    position: relative;
+
+    padding-right: 25px;
+
+    color: var(--text);
+    font-weight: 700;
+
+    cursor: pointer;
+    list-style: none;
+}
+
+/* Menghilangkan penanda bawaan browser */
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Membuat simbol tambah di sisi kanan */
+.faq-item summary::after {
+    content: "+";
+
+    position: absolute;
+    right: 0;
+    top: -3px;
+
+    color: var(--primary);
+    font-size: 1.4rem;
+}
+
+/* Mengubah simbol saat FAQ dibuka */
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+/* Jawaban FAQ */
+.faq-item p {
+    margin-top: 14px;
+    padding-top: 14px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--text-light);
+    font-size: 0.92rem;
+}
+
+
+/* =====================================================
+   10. FOOTER / BAGIAN BAWAH WEBSITE
+   ===================================================== */
+
+/* Latar footer */
+.footer {
+    padding-top: 55px;
+
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* Layout kolom footer */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr 1fr;
+    gap: 45px;
+
+    padding-bottom: 45px;
+}
+
+/* Logo di footer */
+.footer-logo {
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+/* Deskripsi brand */
+.footer-brand p {
+    max-width: 340px;
+
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* Judul kolom footer */
+.footer-column h3 {
+    margin-bottom: 18px;
+
+    color: var(--white);
+    font-size: 1rem;
+}
+
+/* Tautan dan informasi footer */
+.footer-column a,
+.footer-column p {
+    display: block;
+    margin-bottom: 11px;
+
+    color: #94a3b8;
+    font-size: 0.88rem;
+}
+
+/* Efek hover tautan footer */
+.footer-column a:hover {
+    color: var(--white);
+}
+
+/* Baris hak cipta */
+.footer-bottom {
+    padding: 20px;
+
+    border-top: 1px solid #334155;
+
+    color: #94a3b8;
+    font-size: 0.82rem;
+    text-align: center;
+}
+
+
+/* =====================================================
+   11. RESPONSIVE UNTUK TABLET
+   Aktif ketika lebar layar 900px atau kurang.
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    /* Mengurangi jarak navigasi */
+    .nav-menu {
+        gap: 14px;
+    }
+
+    .nav-menu a {
+        font-size: 0.85rem;
+    }
+
+    /* Mengurangi jarak hero */
+    .hero-grid {
+        gap: 30px;
+    }
+
+    /* Mengurangi ukuran lingkaran ilustrasi */
+    .hero-circle {
+        width: min(100%, 350px);
+    }
+
+    /* Kartu keunggulan dan layanan tetap tiga kolom */
+    .advantages-grid,
+    .services-grid {
+        gap: 16px;
+    }
+
+    .service-card {
+        padding: 23px;
+    }
+
+    /* Empat langkah menjadi dua kolom */
+    .steps-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Memperkecil jarak formulir */
+    .booking-grid {
+        gap: 30px;
+    }
+
+    .booking-form-card {
+        padding: 25px;
+    }
+
+    /* Footer lebih rapat */
+    .footer-grid {
+        gap: 25px;
+    }
+}
+
+
+/* =====================================================
+   12. RESPONSIVE UNTUK HP
+   Aktif ketika lebar layar 680px atau kurang.
+   ===================================================== */
+
+@media (max-width: 680px) {
+
+    /* Lebar konten di HP */
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    /* Mengurangi jarak vertikal setiap bagian */
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    /* Header lebih ringkas */
+    .navbar {
+        min-height: 68px;
+        gap: 12px;
+    }
+
+    /* Logo sedikit lebih kecil */
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+
+    /* Tombol header diperkecil */
+    .nav-button {
+        margin-left: auto;
+        min-height: 40px;
+        padding: 8px 12px;
+
+        font-size: 0.78rem;
+    }
+
+    /* Tombol menu HP ditampilkan */
+    .menu-toggle {
+        display: block;
+        flex-shrink: 0;
+    }
+
+    /*
+       Menu navigasi dibuat tersembunyi terlebih dahulu.
+       JavaScript perlu menambahkan kelas "active"
+       ketika tombol menu HP diklik.
+    */
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        padding: 10px 20px 18px;
+
+        border-bottom: 1px solid var(--border);
+        background: var(--white);
+        box-shadow: var(--shadow);
+    }
+
+    /* Menu tampil saat kelas active ditambahkan */
+    .nav-menu.active {
+        display: flex;
+    }
+
+    /* Setiap tautan menu memenuhi lebar baris */
+    .nav-menu a {
+        padding: 12px 5px;
+
+        border-bottom: 1px solid #f1f5f9;
+
+        font-size: 0.92rem;
+    }
+
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
+
+    /* Bagian hero menjadi satu kolom */
+    .hero {
+        padding: 60px 0 70px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.25rem, 10vw, 3.2rem);
+        letter-spacing: -1.5px;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    /* Tombol hero disusun rapi */
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        padding: 11px 15px;
+        font-size: 0.85rem;
+    }
+
+    /* Daftar keunggulan boleh membungkus ke baris berikutnya */
+    .hero-features {
+        gap: 10px 14px;
+        font-size: 0.78rem;
+    }
+
+    /* Ilustrasi berada di tengah */
+    .hero-visual {
+        padding: 0 10px;
+    }
+
+    .hero-circle {
+        width: min(100%, 340px);
+    }
+
+    /* Kartu mengambang tidak terlalu keluar dari lingkaran */
+    .floating-card {
+        left: -2%;
+        bottom: 7%;
+
+        padding: 11px 13px;
+    }
+
+    .floating-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+    }
+
+    .floating-card strong {
+        font-size: 0.8rem;
+    }
+
+    .floating-card p {
+        font-size: 0.68rem;
+    }
+
+    /* Judul section lebih kecil */
+    .section-heading {
+        margin-bottom: 32px;
+    }
+
+    .section-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-heading p {
+        font-size: 0.9rem;
+    }
+
+    /* Keunggulan ditampilkan satu kolom */
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .advantage-card {
+        padding: 25px;
+    }
+
+    /* Kartu layanan ditampilkan satu kolom */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .service-card {
+        padding: 25px;
+    }
+
+    /* Dua kolom langkah tetap mudah dibaca */
+    .steps-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .step-card {
+        padding: 22px 16px;
+    }
+
+    .step-card h3 {
+        font-size: 0.98rem;
+    }
+
+    .step-card p {
+        font-size: 0.82rem;
+    }
+
+    /* Informasi dan formulir menjadi satu kolom */
+    .booking-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .booking-info h2 {
+        font-size: 2.2rem;
+    }
+
+    .booking-form-card {
+        padding: 22px 18px;
+        border-radius: 15px;
+    }
+
+    .booking-form-card h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Input tetap memenuhi kartu formulir */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+    }
+
+    /* Mengurangi jarak FAQ */
+    .faq-item {
+        padding: 17px;
+    }
+
+    .faq-item summary {
+        font-size: 0.9rem;
+    }
+
+    .faq-item p {
+        font-size: 0.85rem;
+    }
+
+    /* Footer menjadi satu kolom */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        padding: 18px 16px;
+        font-size: 0.75rem;
+    }
+}
+
+
+/* =====================================================
+   13. RESPONSIVE UNTUK HP SANGAT KECIL
+   Aktif ketika lebar layar 380px atau kurang.
+   ===================================================== */
+
+@media (max-width: 380px) {
+
+    /* Mengurangi lebar tepi */
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    /* Memperkecil logo dan tombol header */
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .nav-button {
+        padding: 7px 9px;
+        font-size: 0.72rem;
+    }
+
+    .menu-toggle {
+        font-size: 1.5rem;
+    }
+
+    /* Tombol hero ditata secara vertikal */
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    /* Langkah pemesanan menjadi satu kolom */
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Kartu formulir lebih ringkas */
+    .booking-form-card {
+        padding: 18px 14px;
+    }
+
+    /* Ukuran judul hero tetap sesuai layar */
+    .hero h1 {
+        font-size: 2.15rem;
+    }
+}
+
+
+/* =====================================================
+   14. PENGATURAN AKSESIBILITAS
+   Mengurangi animasi jika pengguna memilihnya.
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    /* Menonaktifkan animasi gulir dan transisi */
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
