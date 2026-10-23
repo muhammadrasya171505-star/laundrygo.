@@ -1,0 +1,812 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Mengatur karakter agar teks bahasa Indonesia tampil dengan benar -->
+    <meta charset="UTF-8">
+
+    <!-- Membuat website menyesuaikan ukuran layar HP, tablet, dan laptop -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul website yang tampil pada tab browser -->
+    <title>LaundryGo | Laundry Antar Jemput</title>
+
+    <!-- Deskripsi singkat untuk mesin pencari -->
+    <meta name="description" content="LaundryGo memudahkan pemesanan laundry antar jemput secara praktis dan cepat.">
+
+    <!-- Menghubungkan file HTML dengan CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Menghubungkan file JavaScript. defer membuat script berjalan setelah HTML selesai dibaca -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- =========================================
+         1. HEADER / NAVIGASI WEBSITE
+         ========================================= -->
+    <header class="header">
+        <div class="container navbar">
+
+            <!-- Logo dan nama website -->
+            <a href="#beranda" class="logo">
+                <span class="logo-icon">🫧</span>
+                <span>Laundry<span class="logo-highlight">Go</span></span>
+            </a>
+
+            <!-- Menu navigasi utama -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#beranda">Beranda</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#cara-kerja">Cara Kerja</a>
+                <a href="#pesan">Pesan Laundry</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+
+            <!-- Tombol untuk membuka formulir pemesanan -->
+            <a href="#pesan" class="btn btn-primary nav-button">
+                Pesan Sekarang
+            </a>
+
+            <!-- Tombol menu untuk layar HP -->
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Buka menu navigasi"
+                aria-controls="navMenu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- =========================================
+         2. BAGIAN BERANDA / HERO
+         ========================================= -->
+    <main>
+
+        <section class="hero" id="beranda">
+            <div class="container hero-grid">
+
+                <!-- Sisi kiri: judul dan deskripsi -->
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        ✨ Laundry praktis untuk aktivitasmu
+                    </span>
+
+                    <h1>
+                        Cucian Beres,<br>
+                        <span class="text-highlight">Waktu Lebih Bebas!</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Tidak sempat mencuci pakaian?
+                        Serahkan kepada LaundryGo. Pesan dari website,
+                        tentukan jadwal penjemputan, dan biarkan kami
+                        membantu mengurus cucianmu.
+                    </p>
+
+                    <!-- Tombol utama menuju formulir pemesanan -->
+                    <div class="hero-buttons">
+                        <a href="#pesan" class="btn btn-primary">
+                            🧺 Pesan Laundry
+                        </a>
+
+                        <a href="#layanan" class="btn btn-outline">
+                            Lihat Layanan
+                        </a>
+                    </div>
+
+                    <!-- Informasi singkat keunggulan layanan -->
+                    <div class="hero-features">
+                        <span>✓ Pemesanan mudah</span>
+                        <span>✓ Harga transparan</span>
+                        <span>✓ Antar jemput</span>
+                    </div>
+
+                </div>
+
+                <!-- Sisi kanan: ilustrasi sederhana tanpa gambar eksternal -->
+                <div class="hero-visual">
+                    <div class="hero-circle">
+                        <div class="laundry-illustration">
+                            <span class="bubble bubble-one"></span>
+                            <span class="bubble bubble-two"></span>
+                            <span class="bubble bubble-three"></span>
+
+                            <div class="basket">🧺</div>
+                            <div class="shirt">👕</div>
+                            <div class="sparkle">✦</div>
+                        </div>
+
+                        <!-- Kartu informasi dekoratif -->
+                        <div class="floating-card">
+                            <span class="floating-icon">🚚</span>
+                            <div>
+                                <strong>Antar Jemput</strong>
+                                <p>Lebih praktis dari rumah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================================
+             3. BAGIAN KEUNGGULAN
+             ========================================= -->
+        <section class="advantages section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">KENAPA LAUNDRYGO?</span>
+                    <h2>Laundry Jadi Lebih Mudah</h2>
+                    <p>
+                        Solusi sederhana untuk kamu yang memiliki
+                        aktivitas padat setiap hari.
+                    </p>
+                </div>
+
+                <div class="advantages-grid">
+
+                    <!-- Keunggulan pertama -->
+                    <article class="advantage-card">
+                        <div class="feature-icon">⏰</div>
+                        <h3>Hemat Waktu</h3>
+                        <p>
+                            Pesan laundry secara online tanpa harus
+                            datang langsung ke tempat laundry.
+                        </p>
+                    </article>
+
+                    <!-- Keunggulan kedua -->
+                    <article class="advantage-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Harga Transparan</h3>
+                        <p>
+                            Lihat daftar harga dan estimasi biaya
+                            sebelum mengirim pesanan.
+                        </p>
+                    </article>
+
+                    <!-- Keunggulan ketiga -->
+                    <article class="advantage-card">
+                        <div class="feature-icon">📦</div>
+                        <h3>Antar Jemput</h3>
+                        <p>
+                            Tentukan alamat dan waktu penjemputan
+                            sesuai jadwal yang tersedia.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================================
+             4. BAGIAN DAFTAR LAYANAN
+             ========================================= -->
+        <section class="services section-padding" id="layanan">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">PILIHAN LAYANAN</span>
+                    <h2>Layanan Laundry Kami</h2>
+                    <p>
+                        Pilih layanan yang sesuai dengan kebutuhanmu.
+                        Harga di bawah merupakan contoh dan dapat diubah.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <!-- Layanan reguler -->
+                    <article class="service-card">
+
+                        <div class="service-icon">👕</div>
+
+                        <h3>Cuci Reguler</h3>
+
+                        <p>
+                            Pilihan untuk cucian sehari-hari
+                            dengan waktu pengerjaan reguler.
+                        </p>
+
+                        <div class="service-price">
+                            <strong>Rp7.000</strong>
+                            <span>/ kg</span>
+                        </div>
+
+                        <!-- Memilih layanan otomatis pada formulir -->
+                        <button
+                            type="button"
+                            class="btn btn-outline service-select"
+                            data-service="reguler">
+                            Pilih Reguler
+                        </button>
+
+                    </article>
+
+                    <!-- Layanan kilat -->
+                    <article class="service-card service-featured">
+
+                        <span class="popular-label">Pilihan Cepat</span>
+
+                        <div class="service-icon">⚡</div>
+
+                        <h3>Cuci Kilat</h3>
+
+                        <p>
+                            Pilihan untuk pelanggan yang membutuhkan
+                            pengerjaan lebih cepat sesuai ketersediaan.
+                        </p>
+
+                        <div class="service-price">
+                            <strong>Rp12.000</strong>
+                            <span>/ kg</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="btn btn-primary service-select"
+                            data-service="kilat">
+                            Pilih Kilat
+                        </button>
+
+                    </article>
+
+                    <!-- Layanan cuci setrika -->
+                    <article class="service-card">
+
+                        <div class="service-icon">✨</div>
+
+                        <h3>Cuci dan Setrika</h3>
+
+                        <p>
+                            Pakaian dicuci dan disetrika agar siap
+                            digunakan kembali.
+                        </p>
+
+                        <div class="service-price">
+                            <strong>Rp9.000</strong>
+                            <span>/ kg</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="btn btn-outline service-select"
+                            data-service="setrika">
+                            Pilih Cuci Setrika
+                        </button>
+
+                    </article>
+
+                </div>
+
+                <!-- Catatan agar harga tidak disalahartikan -->
+                <p class="price-note">
+                    * Harga merupakan contoh untuk pengembangan website.
+                    Konfirmasikan tarif aktual kepada mitra laundry.
+                    Biaya akhir mengikuti berat hasil penimbangan dan
+                    kebijakan layanan yang berlaku.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- =========================================
+             5. BAGIAN CARA KERJA
+             ========================================= -->
+        <section class="how-it-works section-padding" id="cara-kerja">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">CARA PEMESANAN</span>
+                    <h2>Empat Langkah, Cucian Beres</h2>
+                    <p>
+                        Proses pemesanan dirancang sederhana
+                        agar mudah digunakan oleh siapa saja.
+                    </p>
+                </div>
+
+                <div class="steps-grid">
+
+                    <article class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon">📝</div>
+                        <h3>Isi Formulir</h3>
+                        <p>
+                            Masukkan nama, nomor WhatsApp, alamat,
+                            layanan, dan jadwal penjemputan.
+                        </p>
+                    </article>
+
+                    <article class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon">🧾</div>
+                        <h3>Periksa Pesanan</h3>
+                        <p>
+                            Periksa detail pesanan dan estimasi
+                            biaya sebelum mengirimkannya.
+                        </p>
+                    </article>
+
+                    <article class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon">🚚</div>
+                        <h3>Jemput Cucian</h3>
+                        <p>
+                            Admin memeriksa pesanan dan mengonfirmasi
+                            jadwal penjemputan.
+                        </p>
+                    </article>
+
+                    <article class="step-card">
+                        <div class="step-number">04</div>
+                        <div class="step-icon">🧺</div>
+                        <h3>Cucian Selesai</h3>
+                        <p>
+                            Cucian diproses dan diantar kembali
+                            sesuai kesepakatan dengan pelanggan.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================================
+             6. FORMULIR PEMESANAN
+             ========================================= -->
+        <section class="booking section-padding" id="pesan">
+            <div class="container booking-grid">
+
+                <!-- Informasi di sisi kiri formulir -->
+                <div class="booking-info">
+
+                    <span class="eyebrow">PESAN SEKARANG</span>
+
+                    <h2>
+                        Jadwalkan Penjemputan
+                        Cucianmu
+                    </h2>
+
+                    <p>
+                        Isi informasi berikut dengan benar.
+                        Kami akan menyiapkan ringkasan pesanan agar
+                        kamu dapat memeriksa detailnya sebelum dikirim
+                        kepada kasir melalui WhatsApp.
+                    </p>
+
+                    <div class="booking-benefits">
+                        <div>
+                            <span>✓</span>
+                            <p>Formulir mudah diisi</p>
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            <p>Estimasi biaya otomatis</p>
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            <p>Konfirmasi melalui WhatsApp</p>
+                        </div>
+                    </div>
+
+                    <div class="booking-note">
+                        <strong>Perlu diperhatikan</strong>
+                        <p>
+                            Jadwal belum dianggap terkonfirmasi sampai
+                            pihak laundry menyetujui pesananmu.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Formulir di sisi kanan -->
+                <div class="booking-form-card">
+
+                    <h3>Formulir Pemesanan</h3>
+
+                    <p class="form-description">
+                        Lengkapi informasi pelanggan dan penjemputan.
+                    </p>
+
+                    <!--
+                        ID bookingForm digunakan oleh JavaScript
+                        untuk membaca dan memvalidasi formulir.
+                    -->
+                    <form id="bookingForm">
+
+                        <!-- Nama pelanggan -->
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+
+                            <input
+                                type="text"
+                                id="nama"
+                                name="nama"
+                                placeholder="Masukkan nama lengkap"
+                                autocomplete="name"
+                                maxlength="100"
+                                required>
+                        </div>
+
+                        <!-- Nomor WhatsApp pelanggan -->
+                        <div class="form-group">
+                            <label for="telepon">
+                                Nomor WhatsApp
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telepon"
+                                name="telepon"
+                                placeholder="Contoh: 081234567890"
+                                autocomplete="tel"
+                                maxlength="20"
+                                pattern="[0-9+() -]{8,20}"
+                                title="Masukkan nomor telepon yang valid"
+                                required>
+                        </div>
+
+                        <!-- Alamat penjemputan -->
+                        <div class="form-group">
+                            <label for="alamat">
+                                Alamat Penjemputan
+                            </label>
+
+                            <textarea
+                                id="alamat"
+                                name="alamat"
+                                rows="3"
+                                maxlength="500"
+                                placeholder="Nama jalan, nomor rumah, kos, dan patokan lokasi"
+                                autocomplete="street-address"
+                                required></textarea>
+                        </div>
+
+                        <!-- Jenis layanan -->
+                        <div class="form-group">
+                            <label for="layananSelect">
+                                Pilih Layanan
+                            </label>
+
+                            <select
+                                id="layananSelect"
+                                name="layanan"
+                                required>
+
+                                <option value="">
+                                    -- Pilih layanan --
+                                </option>
+
+                                <option value="reguler">
+                                    Cuci Reguler - Rp7.000/kg
+                                </option>
+
+                                <option value="kilat">
+                                    Cuci Kilat - Rp12.000/kg
+                                </option>
+
+                                <option value="setrika">
+                                    Cuci dan Setrika - Rp9.000/kg
+                                </option>
+
+                            </select>
+                        </div>
+
+                        <!-- Perkiraan berat pakaian -->
+                        <div class="form-group">
+                            <label for="berat">
+                                Perkiraan Berat Pakaian (kg)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="berat"
+                                name="berat"
+                                min="1"
+                                max="100"
+                                step="0.5"
+                                placeholder="Contoh: 3"
+                                required>
+
+                            <small>
+                                Berat aktual akan ditentukan saat
+                                pakaian ditimbang oleh petugas.
+                            </small>
+                        </div>
+
+                        <!-- Tanggal penjemputan -->
+                        <div class="form-group">
+                            <label for="tanggal">
+                                Tanggal Penjemputan
+                            </label>
+
+                            <input
+                                type="date"
+                                id="tanggal"
+                                name="tanggal"
+                                required>
+                        </div>
+
+                        <!-- Jam penjemputan -->
+                        <div class="form-group">
+                            <label for="waktu">
+                                Waktu Penjemputan
+                            </label>
+
+                            <select
+                                id="waktu"
+                                name="waktu"
+                                required>
+
+                                <option value="">
+                                    -- Pilih waktu --
+                                </option>
+
+                                <option value="09:00">
+                                    09.00
+                                </option>
+
+                                <option value="10:00">
+                                    10.00
+                                </option>
+
+                                <option value="11:00">
+                                    11.00
+                                </option>
+
+                                <option value="13:00">
+                                    13.00
+                                </option>
+
+                                <option value="14:00">
+                                    14.00
+                                </option>
+
+                                <option value="15:00">
+                                    15.00
+                                </option>
+
+                                <option value="16:00">
+                                    16.00
+                                </option>
+
+                                <option value="17:00">
+                                    17.00
+                                </option>
+
+                            </select>
+
+                            <small>
+                                Jadwal yang tersedia perlu dikonfirmasi
+                                oleh admin laundry.
+                            </small>
+                        </div>
+
+                        <!-- Pilihan antar-jemput -->
+                        <div class="form-group">
+                            <label for="antarJemput">
+                                Layanan Antar-Jemput
+                            </label>
+
+                            <select
+                                id="antarJemput"
+                                name="antarJemput"
+                                required>
+
+                                <option value="ya">
+                                    Ya, antar-jemput
+                                </option>
+
+                                <option value="tidak">
+                                    Tidak, antar sendiri
+                                </option>
+
+                            </select>
+                        </div>
+
+                        <!-- Catatan tambahan bersifat opsional -->
+                        <div class="form-group">
+                            <label for="catatan">
+                                Catatan Tambahan (Opsional)
+                            </label>
+
+                            <textarea
+                                id="catatan"
+                                name="catatan"
+                                rows="2"
+                                maxlength="500"
+                                placeholder="Contoh: hubungi saya saat tiba"></textarea>
+                        </div>
+
+                        <!-- Menampilkan perkiraan biaya -->
+                        <div class="estimate-box">
+
+                            <span>Estimasi Total Biaya</span>
+
+                            <!--
+                                JavaScript akan mengubah angka
+                                di dalam elemen ini.
+                            -->
+                            <strong id="estimasiBiaya">
+                                Rp0
+                            </strong>
+
+                            <small id="rincianBiaya">
+                                Pilih layanan dan masukkan berat pakaian.
+                            </small>
+
+                        </div>
+
+                        <!--
+                            Tombol submit memicu validasi dan
+                            proses pemesanan pada script.js.
+                        -->
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-full"
+                            id="submitBooking">
+                            Lanjutkan Pemesanan →
+                        </button>
+
+                        <!-- Pesan status untuk pengguna -->
+                        <p
+                            id="formMessage"
+                            class="form-message"
+                            role="status"
+                            aria-live="polite">
+                        </p>
+
+                        <p class="privacy-note">
+                            Dengan mengirimkan pesanan, kamu menyetujui
+                            informasi yang diberikan digunakan untuk
+                            memproses permintaan laundry.
+                        </p>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================================
+             7. BAGIAN FAQ / PERTANYAAN UMUM
+             ========================================= -->
+        <section class="faq section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">FAQ</span>
+                    <h2>Pertanyaan yang Sering Diajukan</h2>
+                    <p>
+                        Informasi dasar sebelum kamu memesan laundry.
+                    </p>
+                </div>
+
+                <div class="faq-list">
+
+                    <details class="faq-item">
+                        <summary>
+                            Bagaimana cara memesan laundry?
+                        </summary>
+
+                        <p>
+                            Pilih layanan, isi formulir, periksa
+                            estimasi biaya, kemudian kirim detail
+                            pesanan melalui WhatsApp kasir.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            Apakah harga yang tampil merupakan harga akhir?
+                        </summary>
+
+                        <p>
+                            Belum tentu. Harga yang tampil merupakan
+                            estimasi berdasarkan berat perkiraan.
+                            Total akhir mengikuti hasil penimbangan
+                            dan kebijakan laundry.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            Apakah jadwal penjemputan langsung terkonfirmasi?
+                        </summary>
+
+                        <p>
+                            Tidak. Jadwal perlu diperiksa dan disetujui
+                            oleh admin sebelum dianggap terkonfirmasi.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            Apakah saya bisa membatalkan pesanan?
+                        </summary>
+
+                        <p>
+                            Hubungi pihak laundry melalui WhatsApp
+                            untuk meminta pembatalan. Ketentuan
+                            pembatalan mengikuti kebijakan usaha.
+                        </p>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         8. FOOTER / KONTAK
+         ========================================= -->
+    <footer class="footer" id="kontak">
+        <div class="container footer-grid">
+
+            <!-- Identitas usaha -->
+            <div class="footer-brand">
+
+                <a href="#beranda" class="logo footer-logo">
+                    <span class="logo-icon">🫧</span>
+                    <span>Laundry<span class="logo-highlight">Go</span></span>
+                </a>
+
+                <p>
+                    Membantu aktivitasmu menjadi lebih praktis
+                    melalui layanan laundry antar-jemput.
+                </p>
+
+            </div>
+
+            <!-- Navigasi footer -->
+            <div class="footer-column">
+                <h3>Navigasi</h3>
+                <a href="#beranda">Beranda</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#cara-kerja">Cara Kerja</a>
+                <a href="#pesan">Pesan Laundry</a>
+            </div>
+
+            <!-- Informasi kontak -->
+            <div class="footer-column">
+                <h3>Kontak</h3>
+
+                <p>📱 WhatsApp: Hubungi kasir</p>
+                <p>🕒 Jam operasional: Sesuai mitra laundry</p>
+                <p>📍 Wilayah: Sesuai area layanan</p>
+            </div>
+
+        </div>
+
+        <!-- Tahun akan diperbarui oleh JavaScript -->
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentYear">2026</span> LaundryGo.
+                Dibuat sebagai proyek pengembangan website.
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
