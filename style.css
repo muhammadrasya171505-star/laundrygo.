@@ -401,7 +401,7 @@ button:disabled {
    top: 13%;
    left: 6%;
 
-   font-size: clamp(5rem,10vm,7rem);
+   font-size: clamp(6rem,12vm,9rem);
    line-height: 1;
 }
 
