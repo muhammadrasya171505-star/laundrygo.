@@ -402,6 +402,7 @@ button:disabled {
    left: 6%;
 
    font-size: clamp(4rem,8vm,5rem);
+}
 
 /* Bintang dekoratif */
 .sparkle {
