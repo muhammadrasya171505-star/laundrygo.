@@ -121,14 +121,14 @@ function formatTanggal(tanggal) {
 }
 
 // Menampilkan pesan kepada pelanggan.
-// Jenis pesan dapat berupa "pesan anda berhasil" atau "terjadi kesalahan mohon di chek kembali".
+// Jenis pesan dapat berupa "success" atau "error".
 function tampilkanPesan(teks, jenis = "") {
     if (!formMessage) return;
 
     formMessage.textContent = teks;
 
     // Menghapus kelas lama dan menambahkan kelas baru.
-    formMessage.classList.remove("pesan anda berhasil", "terjadi kesalahan mohon di chek kembali");
+    formMessage.classList.remove("succes", "error");
 
     if (jenis) {
         formMessage.classList.add(jenis);
@@ -140,7 +140,7 @@ function hapusPesan() {
     if (!formMessage) return;
 
     formMessage.textContent = "";
-    formMessage.classList.remove("pesan anda berhasil", "terjadi kesalahan mohon di chek kembali");
+    formMessage.classList.remove("success", "error");
 }
 
 
