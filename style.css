@@ -398,10 +398,10 @@ button:disabled {
 /* emoji sabun*/
 .soap {
    position: absolute;
-   top: 16%;
-   left: 14%;
+   top: 13%;
+   left: 6%;
 
-   font-size: clamp(6rem,8vm,5rem);
+   font-size: clamp(4rem,8vm,5rem);
 
 /* Bintang dekoratif */
 .sparkle {
