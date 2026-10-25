@@ -409,7 +409,7 @@ button:disabled {
 /* emoji bintang */
 .soap {
    position: absolute:
-   top:4%;
+   top:15%;
    right:17%;
 
    font-size: clamp(6rem,12vw,5.5rem);
