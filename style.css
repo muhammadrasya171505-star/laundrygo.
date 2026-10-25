@@ -395,16 +395,7 @@ button:disabled {
     font-size: clamp(4rem, 8vw, 6.5rem);
     transform: rotate(12deg);
 }
-./* emoji sabun */
-.shirt{
-    display: inline-block;
-    font-family: "Segoe UI Emoji", "Apple Color Emoji",
-                 "Noto Color Emoji", sans-serif;
-    font-size: 32px;
-    line-height: 1;
-    opacity: 1;
-    visibility: visible;
-}
+
 
 /* Bintang dekoratif */
 .sparkle {
