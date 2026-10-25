@@ -11,31 +11,31 @@
 const tarifLayanan = {
     reguler: {
         nama: "Cuci Reguler",
-        harga: 7000
+        harga: 11000
     },
 
     kilat: {
         nama: "Cuci Kilat",
-        harga: 12000
+        harga: 33000
     },
 
     setrika: {
         nama: "Cuci dan Setrika",
-        harga: 9000
+        harga: 14000
     }
 };
 
 // Contoh biaya antar-jemput per pesanan.
 // Nilai ini hanya contoh dan dapat diubah.
-const biayaAntarJemput = 4000;
+const biayaAntarJemput = 5000;
 
 // Ganti dengan nomor WhatsApp kasir yang benar.
 // Gunakan kode negara 62 tanpa tanda + atau angka 0 di depan.
-// Contoh format: 6281234567890
-const nomorKasir = "6281234567890";
+// Contoh format: 6282228264669
+const nomorKasir = "6282228264669";
 
 // Batas berat yang bisa dipilih pada formulir.
-const beratMinimum = 1;
+const beratMinimum = 2;
 const beratMaksimum = 100;
 
 
@@ -121,14 +121,14 @@ function formatTanggal(tanggal) {
 }
 
 // Menampilkan pesan kepada pelanggan.
-// Jenis pesan dapat berupa "success" atau "error".
+// Jenis pesan dapat berupa "pesan anda berhasil" atau "terjadi kesalahan mohon di chek kembali".
 function tampilkanPesan(teks, jenis = "") {
     if (!formMessage) return;
 
     formMessage.textContent = teks;
 
     // Menghapus kelas lama dan menambahkan kelas baru.
-    formMessage.classList.remove("success", "error");
+    formMessage.classList.remove("pesan anda berhasil", "terjadi kesalahan mohon di chek kembali");
 
     if (jenis) {
         formMessage.classList.add(jenis);
@@ -140,7 +140,7 @@ function hapusPesan() {
     if (!formMessage) return;
 
     formMessage.textContent = "";
-    formMessage.classList.remove("success", "error");
+    formMessage.classList.remove("pesan anda berhasil", "terjadi kesalahan mohon di chek kembali");
 }
 
 
