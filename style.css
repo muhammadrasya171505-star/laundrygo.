@@ -396,6 +396,15 @@ button:disabled {
     transform: rotate(12deg);
 }
 
+/* emoji sabun */
+.soap {
+   position: absolute:
+   top: 20%;
+   right: 15%;
+
+   font-size: clamp(7rem,12vw,6rem);
+   transform: rotate(16deg);
+}
 
 /* Bintang dekoratif */
 .sparkle {
@@ -405,15 +414,6 @@ button:disabled {
 
     color: #0f766e;
     font-size: 3rem;
-}
-/* emoji sabun */
-.soap {
-   position: absolute:
-   top:16%;
-   right:17%;
-
-   font-size: clamp(6rem,12vw,5.5rem);
-   transform: rotate(16deg);
 }
 
 /* Gelembung dekoratif */
