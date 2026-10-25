@@ -399,9 +399,9 @@ button:disabled {
 .soap {
    position: absolute;
    top: 13%;
-   left: 5%;
+   left: 6%;
 
-   font-size: clamp(4rem,8vm,6rem);
+   font-size: clamp(5rem,10vm,7rem);
    line-height: 1;
 }
 
