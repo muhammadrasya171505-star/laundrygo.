@@ -395,6 +395,15 @@ button:disabled {
     font-size: clamp(4rem, 8vw, 6.5rem);
     transform: rotate(12deg);
 }
+.soap {
+    display: inline-block;
+    font-family: "Segoe UI Emoji", "Apple Color Emoji",
+                 "Noto Color Emoji", sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    opacity: 1;
+    visibility: visible;
+}
 
 /* Bintang dekoratif */
 .sparkle {
@@ -435,6 +444,11 @@ button:disabled {
     bottom: 14%;
     right: 23%;
 }
+.bubble-four {
+   width: 30px
+   height:30px
+   bottom: 16%
+   right: 40%
 
 /* Kartu informasi yang mengambang di atas ilustrasi */
 .floating-card {
