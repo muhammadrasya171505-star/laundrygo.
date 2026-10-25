@@ -396,15 +396,6 @@ button:disabled {
     transform: rotate(12deg);
 }
 
-/* emoji sabun */
-.soap {
-   position: absolute:
-   top: 20%;
-   right: 15%;
-
-   font-size: clamp(7rem,12vw,6rem);
-   transform: rotate(16deg);
-}
 
 /* Bintang dekoratif */
 .sparkle {
