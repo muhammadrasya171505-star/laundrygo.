@@ -380,8 +380,8 @@ button:disabled {
 /* Emoji keranjang */
 .basket {
     position: absolute;
-    bottom: 8%;
-    left: 14%;
+    bottom: 6%;
+    left: 13%;
 
     font-size: clamp(5rem, 10vw, 8rem);
 }
@@ -406,10 +406,10 @@ button:disabled {
     color: #0f766e;
     font-size: 3rem;
 }
-/* emoji bintang */
+/* emoji sabun */
 .soap {
    position: absolute:
-   top:15%;
+   top:16%;
    right:17%;
 
    font-size: clamp(6rem,12vw,5.5rem);
