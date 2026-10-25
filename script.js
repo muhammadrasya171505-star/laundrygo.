@@ -128,7 +128,7 @@ function tampilkanPesan(teks, jenis = "") {
     formMessage.textContent = teks;
 
     // Menghapus kelas lama dan menambahkan kelas baru.
-    formMessage.classList.remove("succes", "error");
+    formMessage.classList.remove("success", "error");
 
     if (jenis) {
         formMessage.classList.add(jenis);
