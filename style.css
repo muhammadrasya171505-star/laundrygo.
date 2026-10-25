@@ -395,7 +395,8 @@ button:disabled {
     font-size: clamp(4rem, 8vw, 6.5rem);
     transform: rotate(12deg);
 }
-.soap {
+./* emoji sabun */
+.shirt{
     display: inline-block;
     font-family: "Segoe UI Emoji", "Apple Color Emoji",
                  "Noto Color Emoji", sans-serif;
@@ -444,11 +445,6 @@ button:disabled {
     bottom: 14%;
     right: 23%;
 }
-.bubble-four {
-   width: 30px
-   height:30px
-   bottom: 16%
-   right: 40%
 
 /* Kartu informasi yang mengambang di atas ilustrasi */
 .floating-card {
