@@ -389,7 +389,7 @@ button:disabled {
 /* Emoji pakaian */
 .shirt {
     position: absolute;
-    top: 8%;
+    top: 12%;
     right: 9%;
 
     font-size: clamp(4rem, 8vw, 6.5rem);
@@ -399,7 +399,7 @@ button:disabled {
 .soap {
    position: absolute;
    top: 13%;
-   left: 6%;
+   left: 5%;
 
    font-size: clamp(4rem,8vm,5rem);
 }
