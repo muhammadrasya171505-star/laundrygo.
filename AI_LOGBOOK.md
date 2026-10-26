@@ -110,8 +110,7 @@ Tahap ini bertujuan menemukan dan memperbaiki kesalahan kode yang menyebabkan ta
 **Contoh masalah yang ditinjau:**
 
 1. **Kesalahan penulisan sintaks CSS:** Kurung kurawal penutup `}` pada aturan `.soap` tidak ditulis dengan benar atau tidak tersedia, sehingga aturan CSS berikutnya dapat ikut terdampak.
-2. **Kesalahan satuan ukuran:** Penulisan `8vm` perlu diperiksa dan diganti menjadi `8vw` apabila yang dimaksud adalah satuan lebar viewport.
-3. **Ukuran ikon sabun:** Ikon sabun perlu disesuaikan ukurannya agar tampil lebih besar dan seimbang dengan ilustrasi keranjang serta pakaian.
+2. **Ukuran ikon sabun:** Ikon sabun perlu disesuaikan ukurannya agar tampil lebih besar dan seimbang dengan ilustrasi keranjang serta pakaian.
 
 **Contoh prompt lanjutan:**
 
