@@ -135,8 +135,6 @@ Perubahan yang ditinjau meliputi:
 }
 ```
 
-Kode tersebut menggunakan `clamp()` agar ukuran ikon dapat menyesuaikan ukuran layar dengan batas minimum dan maksimum.
-
 **Hasil tahap:** Kesalahan kode ditinjau dan perbaikan dilakukan berdasarkan hasil pemeriksaan. Status keberhasilan setiap perbaikan perlu dipastikan melalui pengujian website.
 
 ---
