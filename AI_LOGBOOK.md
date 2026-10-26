@@ -124,7 +124,6 @@ Saya memeriksa kembali kode CSS yang bermasalah dan membandingkan saran perbaika
 Perubahan yang ditinjau meliputi:
 
 - Memastikan setiap blok CSS memiliki kurung kurawal pembuka dan penutup yang sesuai.
-- Memeriksa penulisan satuan ukuran, termasuk penggunaan `vw` jika sesuai dengan kebutuhan desain.
 - Menyesuaikan ukuran ikon sabun menggunakan properti CSS seperti `font-size`.
 - Menguji tampilan website setelah perubahan untuk melihat apakah masalah sudah teratasi.
 
@@ -132,8 +131,8 @@ Perubahan yang ditinjau meliputi:
 
 ```css
 .soap {
-    font-size: clamp(5rem, 10vw, 7rem);
-    line-height: 1;
+    font-size: 100px !important;
+   line-height: 1;
 }
 ```
 
