@@ -1,5 +1,4 @@
-# laundrygo.
-# LaundryGo — Website Laundry Antar Jemput
+Go — Website Laundry Antar Jemput
 
 ## A. Judul dan Deskripsi
 
@@ -114,7 +113,7 @@ Penyesuaian yang dapat dicantumkan sesuai dengan tindakan yang benar-benar dilak
 
 ### Tautan Website Aktif
 
-**Website:** `[Masukkan URL website yang sudah dipublikasikan]`
+**Website:** https://muhammadrasya171505-star.github.io/laundrygo./
 
 **Repositori GitHub:** `[Masukkan URL repositori GitHub]`
 
@@ -124,30 +123,11 @@ Jika menggunakan GitHub Pages, aktifkan publikasi melalui menu **Settings → Pa
 
 ## E. Identitas Pengembang
 
-- **Nama lengkap peserta:** `[Isi nama lengkap]`
-- **Kelas:** `[Isi kelas]`
-- **Jurusan:** `[Isi jurusan atau tulis "Tidak ada" jika tidak berlaku]`
-- **Asal sekolah:** SMA Alrifaie *(periksa dan sesuaikan jika diperlukan)*
+- **Nama lengkap peserta:** MUHAMMAD RASYA ZIVEN PRASETIYO & MUHAMMAD FAWWAZ HILMY
+- **Kelas:** XI
+- **Jurusan:** IPA
+- **Asal sekolah:** SMAS AL-RIFA'IE GONDANGLEGI MALANG
 - **Nama produk:** LaundryGo
 - **Tahun pengembangan:** 2026
 
 ---
-
-## Pengujian Sebelum Pengumpulan
-
-- [ ] Website dapat dibuka tanpa masalah.
-- [ ] CSS berhasil dimuat.
-- [ ] JavaScript berjalan sesuai fungsi.
-- [ ] Menu navigasi dapat digunakan.
-- [ ] Estimasi biaya berubah sesuai pilihan.
-- [ ] Formulir memeriksa data yang dimasukkan.
-- [ ] Ringkasan pesanan tampil dengan benar.
-- [ ] Nomor WhatsApp kasir sudah diperiksa.
-- [ ] Website sudah diuji pada komputer dan ponsel.
-- [ ] Tautan website aktif dan dapat dibuka.
-- [ ] Identitas peserta sudah dilengkapi.
-- [ ] Bukti penggunaan AI sudah disiapkan jika diperlukan.
-
----
-
-*README ini merupakan dokumentasi proyek LaundryGo. Lengkapi semua bagian bertanda kurung siku sebelum mengumpulkannya.*
