@@ -51,14 +51,16 @@ LaundryGo/
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md
+├── README.md
+└── AI_LOGBOOK.md     
 ```
 
 - `index.html`: struktur halaman website.
 - `style.css`: desain dan tata letak website.
 - `script.js`: fungsi interaktif dan pemrosesan pesanan.
 - `README.md`: dokumentasi proyek.
-
+- `AI_LOGBOOK.md`: dokumentasikan interaksi dengan
+kecerdasan artifisial
 ---
 
 ## C. Pemanfaatan AI (AI Usage Disclosure)
@@ -87,8 +89,6 @@ Penyesuaian yang dapat dicantumkan sesuai dengan tindakan yang benar-benar dilak
 - Memeriksa kembali harga layanan dan nomor WhatsApp kasir.
 - Menguji formulir dan memperbaiki bagian yang belum berjalan sesuai harapan.
 
-**Catatan:** Sesuaikan daftar ini dengan perbaikan yang benar-benar kamu lakukan. Tambahkan bukti percakapan AI jika diminta oleh guru.
-
 ---
 
 ## D. Panduan Penggunaan
@@ -116,8 +116,6 @@ Penyesuaian yang dapat dicantumkan sesuai dengan tindakan yang benar-benar dilak
 **Website:** https://muhammadrasya171505-star.github.io/laundrygo./
 
 **Repositori GitHub:** https://github.com/muhammadrasya171505-star/laundrygo.
-
-Jika menggunakan GitHub Pages, aktifkan publikasi melalui menu **Settings → Pages** pada repositori. Setelah URL website tersedia, ganti teks placeholder di atas dengan tautan yang benar-benar aktif.
 
 ---
 
