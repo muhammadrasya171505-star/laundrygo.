@@ -8,7 +8,7 @@
 - **Jurusan:** IPA
 - **Sekolah:** SMAS AL-RIFA'IE GONDANGLEGI MALANG
 - **Tahun Pembuatan:** 2026
-- **Repositori:** [Masukkan tautan repositori GitHub]
+- **Repositori:** https://github.com/muhammadrasya171505-star/laundrygo.
 
 ---
 
