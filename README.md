@@ -115,7 +115,7 @@ Penyesuaian yang dapat dicantumkan sesuai dengan tindakan yang benar-benar dilak
 
 **Website:** https://muhammadrasya171505-star.github.io/laundrygo./
 
-**Repositori GitHub:** `[Masukkan URL repositori GitHub]`
+**Repositori GitHub:** https://github.com/muhammadrasya171505-star/laundrygo.
 
 Jika menggunakan GitHub Pages, aktifkan publikasi melalui menu **Settings → Pages** pada repositori. Setelah URL website tersedia, ganti teks placeholder di atas dengan tautan yang benar-benar aktif.
 
