@@ -1,4 +1,4 @@
-Go — Website Laundry Antar Jemput
+laundryGo — Website Laundry Antar Jemput
 
 ## A. Judul dan Deskripsi
 
