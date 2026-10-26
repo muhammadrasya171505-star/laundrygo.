@@ -3,10 +3,10 @@
 ## Identitas Proyek
 
 - **Nama Proyek:** LaundryGo — Website Laundry Antar Jemput
-- **Nama Pengembang:** [Isi nama lengkap]
-- **Kelas:** [Isi kelas]
-- **Jurusan:** [Isi jurusan jika ada]
-- **Sekolah:** SMA Alrifaie
+- **Nama Pengembang:** MUHAMMAD RASYA ZIVEN PRASETIYO & MUHAMMAD FAWWAZ HILMY
+- **Kelas:** XI
+- **Jurusan:** IPA
+- **Sekolah:** SMAS AL-RIFA'IE GONDANGLEGI MALANG
 - **Tahun Pembuatan:** 2026
 - **Repositori:** [Masukkan tautan repositori GitHub]
 
