@@ -16,7 +16,7 @@ const tarifLayanan = {
 
     kilat: {
         nama: "Cuci Kilat",
-        harga: 33000
+        harga: 23000
     },
 
     setrika: {
