@@ -399,7 +399,7 @@ button:disabled {
 .soap {
    position: absolute;
    top: 13%;
-   left: 6%;
+   left: 4%;
 
    font-size: 100px !important;
    line-height: 1;
@@ -408,8 +408,8 @@ button:disabled {
 /* Bintang dekoratif */
 .sparkle {
     position: absolute;
-    top: 3%;
-    left: 17%;
+    top: 4%;
+    left: 19%;
 
     color: #0f766e;
     font-size: 3rem;
