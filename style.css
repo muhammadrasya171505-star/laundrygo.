@@ -396,7 +396,7 @@ button:disabled {
     transform: rotate(12deg);
 }
 /* emoji sabun*/
-.laundry-illustration.soap {
+.soap {
    position: absolute;
    top: 13%;
    left: 4%;
@@ -406,7 +406,7 @@ button:disabled {
 }
 
 /* Bintang dekoratif */
-.laundry-illustration.sparkle {
+.sparkle {
     position: absolute;
     top: 4%;
     left: 19%;
