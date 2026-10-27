@@ -130,7 +130,7 @@ Perubahan yang ditinjau meliputi:
 
 ```css
 awalnya seperti:
-.soap{
+.soap {
   font-size: clamp(3rem, 9vw, 5rem);
     transform: rotate(12deg);
 }
