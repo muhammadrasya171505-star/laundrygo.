@@ -81,8 +81,6 @@ Berikut contoh prompt yang digunakan selama pengembangan:
 
 ### Penyesuaian dan Perbaikan Mandiri
 
-Penyesuaian yang dapat dicantumkan sesuai dengan tindakan yang benar-benar dilakukan:
-
 - Menyesuaikan ukuran ikon sabun melalui properti `font-size` pada CSS.
 - Memeriksa hubungan antara file HTML, CSS, dan JavaScript.
 - Memeriksa tata letak ketika tampilan website tidak sesuai harapan.
