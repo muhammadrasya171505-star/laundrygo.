@@ -201,5 +201,3 @@ AI digunakan sebagai alat bantu pembelajaran, bukan sebagai pengganti proses ber
 Dokumentasi ini dibuat sebagai bentuk transparansi penggunaan AI dalam proses pengembangan website LaundryGo.
 
 ---
-
-**Catatan:** Isi logbook harus disesuaikan dengan proses pengerjaan yang benar-benar dilakukan oleh pengembang. Contoh prompt, perubahan kode, dan refleksi di atas perlu diperiksa kembali agar sesuai dengan interaksi AI dan pengujian yang sebenarnya.
