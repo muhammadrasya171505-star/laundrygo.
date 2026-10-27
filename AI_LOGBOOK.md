@@ -129,6 +129,8 @@ Perubahan yang ditinjau meliputi:
 **Contoh kode penyesuaian ukuran ikon:**
 
 ```css
+awalnya seperti
+
 .soap {
     font-size: 100px !important;
    line-height: 1;
