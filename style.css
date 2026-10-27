@@ -403,6 +403,7 @@ button:disabled {
 
    font-size: 100px !important;
    line-height: 1;
+   z-index: 2;
 }
 
 /* Bintang dekoratif */
@@ -413,6 +414,7 @@ button:disabled {
 
     color: #0f766e;
     font-size: 3rem;
+    z-index: 10;
 }
 
 /* Gelembung dekoratif */
